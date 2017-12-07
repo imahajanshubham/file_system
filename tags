@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	Makefile	/^BIN = bin$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -I$(INC)$/;"	m
+EXISTS	src/main.c	9;"	d	file:
+INC	Makefile	/^INC = inc$/;"	m
+MAX_FILE_NAME	src/main.c	8;"	d	file:
+MAX_NODE_SIZE	src/main.c	7;"	d	file:
+NOT_EXISTS	src/main.c	10;"	d	file:
+OBJECT	Makefile	/^OBJECT = $(patsubst %,$(BIN)\/%, $(notdir $(SOURCE:.c=.o)))$/;"	m
+SOURCE	Makefile	/^SOURCE = $(wildcard $(SRC)\/*.c)$/;"	m
+SRC	Makefile	/^SRC = src$/;"	m
+TARGET	Makefile	/^TARGET = main$/;"	m
+create_dependencies	src/main.c	/^void create_dependencies( struct directory *mf ) {$/;"	f
+create_directory	src/main.c	/^void create_directory( struct directory *curr_dir,$/;"	f
+dir_id	src/main.c	/^        dir_id[ MAX_NODE_SIZE ];$/;"	m	struct:directory	file:
+dir_list	src/main.c	/^        *dir_list[ MAX_NODE_SIZE ];$/;"	m	struct:directory	file:
+directory	src/main.c	/^struct directory {$/;"	s	file:
+directory_conflicts	src/main.c	/^int directory_conflicts( struct directory *curr_dir,$/;"	f
+display_fs	src/main.c	/^void display_fs( struct directory *curr_dir ) {$/;"	f
+display_options	src/main.c	/^void display_options() {$/;"	f
+hash_code	src/main.c	/^int hash_code( char *directory_name ) {$/;"	f
+id	src/main.c	/^        id,$/;"	m	struct:directory	file:
+init_mf	src/main.c	/^struct directory init_mf( char *name ) {$/;"	f
+inode	src/main.c	/^                     *inode;$/;"	m	struct:directory	typeref:struct:directory::	file:
+main	src/main.c	/^int main( void ) {$/;"	f
+name	src/main.c	/^        name[ MAX_FILE_NAME ],$/;"	m	struct:directory	file:
+parent	src/main.c	/^    struct directory *parent,$/;"	m	struct:directory	typeref:struct:directory::directory	file:
+populate_directory	src/main.c	/^void populate_directory ( struct directory *curr_dir,$/;"	f
+process_choice	src/main.c	/^void process_choice( struct directory *curr_dir, int choice ) {$/;"	f
+update_fat	src/main.c	/^void update_fat( struct directory *curr_dir,$/;"	f
